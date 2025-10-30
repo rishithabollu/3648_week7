@@ -4,7 +4,7 @@ pipeline {
         stage('Build') { 
             steps { 
                 echo "Build Docker Image" 
-                bat "docker build -t mypythonflaskapp ." 
+                bat "docker build -t mypythonflaskapp -f week7/Dockerfile ." 
             } 
         }
         stage('Run') { 
